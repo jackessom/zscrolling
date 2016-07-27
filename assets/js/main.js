@@ -1,0 +1,5 @@
+$(function() {
+
+	$('#wrapper').zscrolling();
+	
+});

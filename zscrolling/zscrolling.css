@@ -1,0 +1,41 @@
+.zScrolling-wrapper {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  -webkit-perspective-origin: center;
+  perspective-origin: center;
+  width: 100vw;
+  height: 100vh; 
+}
+
+.zScrolling-layer {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+
+.zScrolling-layer h2 {
+margin: 0; 
+}
+
+.zScrolling-layer.layer-1 {
+transform: translate3d(0, 0, -100px);
+z-index: 0;
+height: 100%; 
+}
+
+.zScrolling-layer.layer-2 {
+transform: translate3d(0, 0, -2000px);
+z-index: -1;
+height: 100%; 
+}
+
+.zScrolling-layer.layer-3 {
+transform: translate3d(0, 0, -4000px);
+z-index: -2;
+height: 100%; 
+}
